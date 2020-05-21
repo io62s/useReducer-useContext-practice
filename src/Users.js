@@ -3,10 +3,10 @@ import { CountContext } from "./Context";
 
 const Users = () => {
   const users = useContext(CountContext);
-  const { data, getUser, name, setName, dispatch } = users;
+  const { data, getUser, name, getName, dispatch } = users;
 
   const handleUsers = e => {
-    dispatch(setName(e.target.value));
+    dispatch(getName(e.target.value));
   };
 
   const renderUsers = data
