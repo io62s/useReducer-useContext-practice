@@ -8,7 +8,7 @@ export const incrementByNum = num => {
   };
 };
 
-export const setName = name => {
+export const getName = name => {
   return {
     type: GET_NAME,
     payload: name
